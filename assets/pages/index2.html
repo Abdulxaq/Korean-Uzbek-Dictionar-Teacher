@@ -35,7 +35,7 @@
             border: 2px rgba(0, 128, 0, 0.568) solid ;
             border-radius: 30px;
             font-size: 50px;
-            padding: 7px 5px 7px 5px;
+            padding: 5px;
             background:#34656d;
             color: #fffbdf;
             margin: 10px 0 10px 0;
@@ -71,6 +71,9 @@
             font-size: 35px;
             background: rgba(0, 247, 255, 0.158);
         }
+        #quiz ul li p{
+            margin: 0;
+        }
         #quiz ul li:hover{
             box-shadow: 0 0 10px rgb(0, 225, 255);
         }
@@ -89,20 +92,23 @@
     </style>
   </head>
   <body>
-    <h1 style="z-index: 1;" >Quyida berilgan so'zni Kareys tilidagi tarjimasini toping:</h1>
-    <div class="word" style="z-index: 1;"  ><p id="word" >Davlat</p></div>
+    <h1 style="z-index: 1;" >Quyida berilgan so'zni Koreys tilidagi tarjimasini toping:</h1>
+    <div class="word" style="z-index: 1;"  ><p id="word" ></p></div>
     <div id="quiz" style="z-index: 1;"  > 
         <ul>
-            <li>A.<p></p>ssssssss</li>
-            <li>B.<p></p></li>
-            <li>C.<p></p></li>
-            <li>D.<p></p></li>
+            <li>A.<p id="A"></p></li>
+            <li>B.<p id="B"></p></li>
+            <li>C.<p id="C"></p></li>
+            <li>D.<p id="D"></p></li>
         </ul>
     </div>
     <div id="buttons" style="z-index: 1;"  >
-     <input class="btn" type="button" value="Oldingi">
-     <input class="btn" type="button" value="Bosh sahifa">
-     <input class="btn" type="button" value="Keyingi">
+     <a href=""><input onclick="prev()" class="btn" type="button" value="Oldingi"></a>
+     <a href="../../index.html"><input class="btn" type="button" value="Bosh sahifa"></a>
+     <a href=""><input onclick="next()" class="btn" type="button" value="Keyingi"></a>
+
+     <script src="../js/app.js" ></script>
+     
     </div>
 
 
