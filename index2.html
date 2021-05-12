@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <title>KKC Quiz</title>
+    <style>
+        *,:after,:before{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            background-color: #263332;
+            color: #fffbdf;
+            padding: 10px;
+            border-radius: 0 0 30px 30px;
+            user-select: none;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fffbdf;
+        }
+        .word{
+            user-select: none;
+            border: 2px rgba(0, 128, 0, 0.568) solid ;
+            border-radius: 30px;
+            font-size: 50px;
+            padding: 10px;
+            background:#34656d;
+            color: #fffbdf;
+            margin: 30px 0 30px 0;
+            box-shadow: 
+            -10px -10px 15px rgb(255 ,255 ,255 , 50%), 10px 10px 15px rgb(0, 0, 0, 12%)
+            ;
+        }
+        #quiz{
+            max-width: 650px;
+            width: 100%;
+        }
+        #quiz ul{
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #quiz ul li{
+            cursor: pointer;
+            user-select: none;
+            padding: 0 150px 0 50px;
+            margin: 10px;
+            list-style: none;
+            border: 1px solid rgba(4, 165, 180, 0.479);
+            max-width: 500px;
+            width: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 40px;
+            background: rgba(0, 247, 255, 0.158);
+        }
+        #quiz ul li:hover{
+            box-shadow: 0 0 10px rgb(0, 225, 255);
+        }
+        input[type=button]{
+            font-size: 30px;
+            border-radius: 40px;
+        }
+        .btn{
+            background: #263332;
+            color: #fffbdf;
+        }
+        .btn:hover{
+            color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 style="z-index: 1;" >Quyida berilgan so'zni Kareys tilidagi tarjimasini toping:</h1>
+    <div class="word" style="z-index: 1;"  ><p id="word" >Davlat</p></div>
+    <div id="quiz" style="z-index: 1;"  > 
+        <ul>
+            <li>A.<p></p>ssssssss</li>
+            <li>B.<p></p></li>
+            <li>C.<p></p></li>
+            <li>D.<p></p></li>
+        </ul>
+    </div>
+    <div id="buttons" style="z-index: 1;"  >
+     <input class="btn" type="button" value="Oldingi">
+     <input class="btn" type="button" value="Bosh sahifa">
+     <input class="btn" type="button" value="Keyingi">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
