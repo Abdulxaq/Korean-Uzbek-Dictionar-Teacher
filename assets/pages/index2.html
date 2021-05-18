@@ -87,7 +87,7 @@
         margin: 0;
       }
       #quiz ul li:hover {
-        background-color: rgb(255, 87, 87);
+        box-shadow: 0px 0px 20px rgb(99, 206, 255);
       }
       input[type="button"] {
         font-size: 30px;
@@ -125,19 +125,19 @@
       <div class="word" style="z-index: 1"><p id="word">{{savol}}</p></div>
       <div id="quiz" style="z-index: 1">
         <ul>
-          <li :class='check1 ? "a_true" : "a_false" ' @click='check1'  >
+          <li :class='A ? "a_true" : "a_false" ' v-on:click='check'  >
             A.
             <p id="A"> {{variantA}}</p>
           </li>
-          <li>
+          <li :class='B ? "a_true" : "a_false" ' v-on:click='check'>
             B.
             <p id="B">{{variantB}}</p>
           </li>
-          <li>
+          <li :class='C ? "a_true" : "a_false" ' v-on:click='check'>
             C.
             <p id="C">{{variantC}}</p>
-          </li>
-          <li>
+          </li >
+          <li :class='D ? "a_true" : "a_false" ' v-on:click='check'>
             D.
             <p id="D">{{variantD}}</p>
           </li>
