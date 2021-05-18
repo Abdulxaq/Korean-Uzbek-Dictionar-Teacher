@@ -83,19 +83,15 @@ new Vue({
         variantD: " ",
         count: 0,
         checked1: 'a',
+        A: false,
+        B: false,
+        C: false,
+        D: false,
     },
     methods: {
-        check1(){
-            if( this.rn1 === 1){
-                this.checked1 = true;
-            }else{
-                this.checked1 = false;
-            }
-            return this.checked1
-        },
         next() {
             this.count++
-            if (this.count > this.A1kor.length) {
+            if (this.count >= this.A1kor.length) {
                 this.count = 0
             }
         },
@@ -105,6 +101,29 @@ new Vue({
                 this.count = 0
             }
         },
+        check(){
+            if (window.rn1 === 1) {
+                this.A = true
+                this.B = false
+                this.C = false
+                this.D = false
+            } else if (window.rn1 === 2) {
+                this.A = false
+                this.B = true
+                this.C = false
+                this.D = false
+            } else if (window.rn1 === 3) {
+                this.A = false
+                this.B = false
+                this.C = true
+                this.D = false
+            } else if (window.rn1 === 4) {
+                this.A = false
+                this.B = false
+                this.C = false
+                this.D = true
+            }
+        }
 
         
     },
@@ -113,7 +132,7 @@ new Vue({
 
             this.savol = this.A1uzb[this.count];
     
-            const rn1 = Math.ceil(4 * Math.random());
+            window.rn1 = Math.ceil(4 * Math.random());
     
     
             function bir(x) {
