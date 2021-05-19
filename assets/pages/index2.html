@@ -125,26 +125,26 @@
       <div class="word" style="z-index: 1"><p id="word">{{savol}}</p></div>
       <div id="quiz" style="z-index: 1">
         <ul>
-          <li :class='A ? "a_true" : "a_false" ' v-on:click='check'  >
+          <li  id="A" @click="check" >
             A.
-            <p id="A"> {{variantA}}</p>
+            <p> {{variantA}}</p>
           </li>
-          <li :class='B ? "a_true" : "a_false" ' v-on:click='check'>
+          <li  id="B" @click="check">
             B.
-            <p id="B">{{variantB}}</p>
+            <p>{{variantB}}</p>
           </li>
-          <li :class='C ? "a_true" : "a_false" ' v-on:click='check'>
+          <li  id="C" @click="check">
             C.
-            <p id="C">{{variantC}}</p>
+            <p>{{variantC}}</p>
           </li >
-          <li :class='D ? "a_true" : "a_false" ' v-on:click='check'>
+          <li  id="D" @click="check">
             D.
-            <p id="D">{{variantD}}</p>
+            <p>{{variantD}}</p>
           </li>
         </ul>
       </div>
       <div id="buttons" style="z-index: 1">
-        <input v-on:click="prev" class="btn" type="button" value="Oldingi" />
+        <input @click="prev" class="btn" type="button" value="Oldingi" />
         <a href="../../index.html"
           ><input class="btn" type="button" value="Bosh sahifa"
         /></a>
