@@ -18,7 +18,11 @@
 
     <style>
       .navbar{
-        background-color: #263332;
+        padding-right: 100px;
+        position: fixed;
+        width: 100vw;
+        z-index: 2;
+        background: linear-gradient(90deg, #4f99e8a6, #4fe8ad9d);
       }
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -32,6 +36,31 @@
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
+      }
+      #hello{
+        position: relative;
+        font-size: 100px;
+        z-index: -1;
+        height: 400px;
+        font-weight: 900;
+        background-image: url(./assets/images/tog.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: repeat;
+        color: white;
+      }
+      body{
+        background: linear-gradient(90deg, #4f99e8, #4fe8c2);
+      }
+      #salom{
+        position: absolute;
+        top: 120px;
+        left: 20px;
+      }
+      #ksalom{
+        position: absolute;
+        top: 220px;
+        left: 20px;
       }
     </style>
 
@@ -74,19 +103,12 @@
   </div>
 </header>
 
-<main style="background-color: #fffbdf;" >
 
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Album example</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-        <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p>
-      </div>
-    </div>
+<main >
+
+  <section id="hello"  class="py-5 text-center container">
+      <p id="salom" >Salom</p>
+      <p id="ksalom" >안녕하세요</p>
   </section>
 
   <div class="album py-5 " style="background-color: #34656d;" >
