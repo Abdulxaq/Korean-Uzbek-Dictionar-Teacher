@@ -19,10 +19,10 @@ new Vue({
             if (this.count >= this.A1kor.length) {
                 this.count = 0
             }
-            document.getElementById("A").style.backgroundColor = "rgba(0, 247, 255, 0.158)"
-            document.getElementById("B").style.backgroundColor = "rgba(0, 247, 255, 0.158)"
-            document.getElementById("C").style.backgroundColor = "rgba(0, 247, 255, 0.158)"
-            document.getElementById("D").style.backgroundColor = "rgba(0, 247, 255, 0.158)"
+            document.getElementById("A").style.backgroundColor = "rgba(221, 221, 221, 0.959)"
+            document.getElementById("B").style.backgroundColor = "rgba(221, 221, 221, 0.959)"
+            document.getElementById("C").style.backgroundColor = "rgba(221, 221, 221, 0.959)"
+            document.getElementById("D").style.backgroundColor = "rgba(221, 221, 221, 0.959)"
         },
         prev() {
             this.count--
